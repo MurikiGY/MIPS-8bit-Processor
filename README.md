@@ -1,2 +1,2 @@
 # MIPS-8bit-Processor
-Implementation of a simplified MIPS Processor in VHDL and implemented in a xilinx FPGA board
+Implementation of a simplified MIPS Processor in VHDL and tested in a xilinx FPGA board
