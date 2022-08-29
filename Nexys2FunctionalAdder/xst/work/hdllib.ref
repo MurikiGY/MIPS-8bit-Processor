@@ -1,0 +1,7 @@
+EN four_bitadder NULL /home/muriki/FPGA/teste/teste.vhd sub00/vhpl04 1661737423
+EN display NULL /home/muriki/FPGA/teste/display.vhd sub00/vhpl02 1661737421
+AR display behavioral /home/muriki/FPGA/teste/display.vhd sub00/vhpl06 1661719109
+AR display comportamento /home/muriki/FPGA/teste/display.vhd sub00/vhpl03 1661737422
+EN fulladder NULL /home/muriki/FPGA/teste/FullAder.vhd sub00/vhpl00 1661737419
+AR four_bitadder comportamento /home/muriki/FPGA/teste/teste.vhd sub00/vhpl05 1661737424
+AR fulladder behavioral /home/muriki/FPGA/teste/FullAder.vhd sub00/vhpl01 1661737420

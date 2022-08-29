@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/muriki/FPGA/teste/four_bitAdder.ncd
+OUTFILE=/home/muriki/FPGA/teste/four_bitAdder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/muriki/FPGA/teste
+LICENSE=WebPack
+USER_INFO=212519792_0_0_375

@@ -1,0 +1,17 @@
+V3 11
+FL /home/muriki/FPGA/teste/display.vhd 2022/08/28.22:43:29 P.20131013
+EN work/display 1661737421 FL /home/muriki/FPGA/teste/display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display/comportamento 1661737422 \
+      FL /home/muriki/FPGA/teste/display.vhd EN work/display 1661737421
+FL /home/muriki/FPGA/teste/FullAder.vhd 2022/08/28.17:28:16 P.20131013
+EN work/fullAdder 1661737419 FL /home/muriki/FPGA/teste/FullAder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fullAdder/Behavioral 1661737420 \
+      FL /home/muriki/FPGA/teste/FullAder.vhd EN work/fullAdder 1661737419
+FL /home/muriki/FPGA/teste/teste.vhd 2022/08/28.18:06:23 P.20131013
+EN work/four_bitAdder 1661737423 FL /home/muriki/FPGA/teste/teste.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/four_bitAdder/comportamento 1661737424 \
+      FL /home/muriki/FPGA/teste/teste.vhd EN work/four_bitAdder 1661737423 \
+      CP fullAdder CP display
