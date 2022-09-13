@@ -132,8 +132,9 @@
       <a name="label" val="Imediato"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(530,320)" name="AND Gate">
+    <comp lib="1" loc="(500,360)" name="AND Gate">
       <a name="facing" val="west"/>
+      <a name="label" val="BeqAndZero"/>
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(750,120)" name="AND Gate">
@@ -214,7 +215,7 @@
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 8
-43 88 18 cb f4 d3 b 7
+87 88 18 cb 19 47 b 7
 </a>
       <a name="label" val="IM"/>
       <a name="misaligned" val="true"/>
@@ -373,8 +374,8 @@
     <wire from="(290,520)" to="(320,520)"/>
     <wire from="(310,310)" to="(330,310)"/>
     <wire from="(330,270)" to="(330,310)"/>
-    <wire from="(330,370)" to="(1940,370)"/>
-    <wire from="(330,370)" to="(330,380)"/>
+    <wire from="(330,360)" to="(330,380)"/>
+    <wire from="(330,360)" to="(500,360)"/>
     <wire from="(340,390)" to="(360,390)"/>
     <wire from="(340,410)" to="(420,410)"/>
     <wire from="(340,840)" to="(350,840)"/>
@@ -385,6 +386,10 @@
     <wire from="(440,400)" to="(450,400)"/>
     <wire from="(450,900)" to="(450,930)"/>
     <wire from="(450,900)" to="(960,900)"/>
+    <wire from="(530,350)" to="(540,350)"/>
+    <wire from="(530,370)" to="(1940,370)"/>
+    <wire from="(540,80)" to="(540,350)"/>
+    <wire from="(540,80)" to="(760,80)"/>
     <wire from="(560,570)" to="(590,570)"/>
     <wire from="(590,560)" to="(590,570)"/>
     <wire from="(610,490)" to="(630,490)"/>
@@ -423,9 +428,10 @@
     <wire from="(720,340)" to="(760,340)"/>
     <wire from="(740,560)" to="(900,560)"/>
     <wire from="(750,120)" to="(880,120)"/>
-    <wire from="(750,180)" to="(1400,180)"/>
+    <wire from="(750,180)" to="(760,180)"/>
     <wire from="(750,240)" to="(1460,240)"/>
     <wire from="(750,300)" to="(760,300)"/>
+    <wire from="(760,180)" to="(1400,180)"/>
     <wire from="(760,300)" to="(760,340)"/>
     <wire from="(760,300)" to="(860,300)"/>
     <wire from="(760,430)" to="(760,540)"/>
@@ -436,6 +442,7 @@
     <wire from="(760,650)" to="(980,650)"/>
     <wire from="(760,770)" to="(760,970)"/>
     <wire from="(760,770)" to="(980,770)"/>
+    <wire from="(760,80)" to="(760,180)"/>
     <wire from="(760,970)" to="(1200,970)"/>
     <wire from="(860,300)" to="(1220,300)"/>
     <wire from="(860,300)" to="(860,320)"/>
