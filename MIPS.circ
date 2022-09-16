@@ -55,7 +55,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="8.0"/>
     <comp lib="0" loc="(1410,600)" name="Constant">
       <a name="value" val="0x0"/>
       <a name="width" val="2"/>
@@ -131,6 +131,10 @@
       <a name="facing" val="south"/>
       <a name="label" val="Imediato"/>
       <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(360,410)" name="NOT Gate">
+      <a name="facing" val="west"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="1" loc="(500,360)" name="AND Gate">
       <a name="facing" val="west"/>
@@ -377,11 +381,12 @@
     <wire from="(330,360)" to="(330,380)"/>
     <wire from="(330,360)" to="(500,360)"/>
     <wire from="(340,390)" to="(360,390)"/>
-    <wire from="(340,410)" to="(420,410)"/>
+    <wire from="(340,410)" to="(360,410)"/>
     <wire from="(340,840)" to="(350,840)"/>
     <wire from="(350,820)" to="(350,840)"/>
     <wire from="(350,840)" to="(350,860)"/>
     <wire from="(350,860)" to="(1050,860)"/>
+    <wire from="(390,410)" to="(420,410)"/>
     <wire from="(440,390)" to="(640,390)"/>
     <wire from="(440,400)" to="(450,400)"/>
     <wire from="(450,900)" to="(450,930)"/>
