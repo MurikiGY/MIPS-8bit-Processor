@@ -1,0 +1,2 @@
+vhdl work "../../Components/display.vhd"
+vhdl work "../../Components/RegBank.vhd"

@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 19 23:12:57 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "cathodes<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "cathodes<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "clk_fpga" LOCATE = SITE "B8" LEVEL 1;
+COMP "cathodes<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "cathodes<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "cathodes<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "cathodes<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "cathodes<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "cathodes<7>" LOCATE = SITE "C17" LEVEL 1;
+NET "clk_fpga_BUFGP/IBUFG" BEL "clk_fpga_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

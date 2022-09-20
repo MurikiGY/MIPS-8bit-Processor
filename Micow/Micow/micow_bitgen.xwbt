@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.ncd
+OUTFILE=/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow
+LICENSE=WebPack
+USER_INFO=212519792_0_0_375

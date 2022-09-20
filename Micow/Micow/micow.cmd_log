@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.xst" -ofn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.syr" 
+xst -intstyle ise -ifn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.xst" -ofn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.syr" 
+xst -intstyle ise -ifn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.xst" -ofn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/muriki/ufpr/MIPS-8bit-Processor/UCF/Nexys2_500General.ucf -p xc3s500e-vq100-5 micow.ngc micow.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o micow_map.ncd micow.ngd micow.pcf 
+xst -intstyle ise -ifn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.xst" -ofn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/muriki/ufpr/MIPS-8bit-Processor/UCF/Nexys2_500General.ucf -p xc3s500e-fg320-4 micow.ngc micow.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o micow_map.ncd micow.ngd micow.pcf 
+par -w -intstyle ise -ol high -t 1 micow_map.ncd micow.ncd micow.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml micow.twx micow.ncd -o micow.twr micow.pcf 
+xst -intstyle ise -ifn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.xst" -ofn "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/micow.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/muriki/ufpr/MIPS-8bit-Processor/UCF/Nexys2_500General.ucf -p xc3s500e-fg320-4 micow.ngc micow.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o micow_map.ncd micow.ngd micow.pcf 
+par -w -intstyle ise -ol high -t 1 micow_map.ncd micow.ncd micow.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml micow.twx micow.ncd -o micow.twr micow.pcf 
+bitgen -intstyle ise -f micow.ut micow.ncd 

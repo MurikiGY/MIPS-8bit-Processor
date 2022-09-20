@@ -1,0 +1,78 @@
+V3 47
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd 2022/09/19.22:43:57 P.20131013
+EN work/display 1663639897 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display/comportamento 1663639898 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd \
+      EN work/display 1663639897
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/divClock.vhd 2022/09/19.22:40:24 P.20131013
+EN work/clockDiv 1663639899 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/divClock.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clockDiv/Behavior 1663639900 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/divClock.vhd \
+      EN work/clockDiv 1663639899
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/four_bitAdder.vhd 2022/09/19.22:56:59 P.20131013
+EN work/four_bitAdder 1663639895 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/four_bitAdder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/four_bitAdder/Behavior 1663639896 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/four_bitAdder.vhd \
+      EN work/four_bitAdder 1663639895 CP fullAdder
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/fullAdder.vhd 2022/09/19.22:57:43 P.20131013
+EN work/fullAdder 1663639893 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/fullAdder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fullAdder/comportamento 1663639894 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/fullAdder.vhd \
+      EN work/fullAdder 1663639893
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/main.vhd 2022/09/19.23:11:13 P.20131013
+EN work/micow 1663639913 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/main.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/micow/Behavior 1663639914 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/main.vhd EN work/micow 1663639913 \
+      CP reg_addrs CP rg_ula CP data_rb CP pc_soma CP clockDiv CP pc CP MemRom \
+      CP BankRegister CP ULA CP MemRam CP UnitControl
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRam.vhd 2022/09/19.23:00:53 P.20131013
+EN work/MemRam 1663639909 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRam.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/MemRam/Behavior 1663639910 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRam.vhd \
+      EN work/MemRam 1663639909
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRom.vhd 2022/09/19.23:06:16 P.20131013
+EN work/MemRom 1663639903 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRom.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/MemRom/Behavior 1663639904 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRom.vhd \
+      EN work/MemRom 1663639903
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/RegBank.vhd 2022/09/19.23:04:14 P.20131013
+EN work/BankRegister 1663639905 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/RegBank.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/BankRegister/Behavior 1663639906 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/RegBank.vhd \
+      EN work/BankRegister 1663639905 CP display
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/ULA.vhd 2022/09/19.22:58:26 P.20131013
+EN work/ula 1663639907 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/ULA.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ula/comportamento 1663639908 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/ULA.vhd EN work/ula 1663639907 \
+      CP four_bitAdder
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/UnitControl.vhd 2022/09/19.22:59:16 P.20131013
+EN work/UnitControl 1663639911 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/UnitControl.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UnitControl/Behavior 1663639912 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Components/UnitControl.vhd \
+      EN work/UnitControl 1663639911
+FL /home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/PC.vhd 2022/09/19.22:35:26 P.20131013
+EN work/pc 1663639901 FL /home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/PC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/pc/Behavior 1663639902 \
+      FL /home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/PC.vhd EN work/pc 1663639901

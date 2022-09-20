@@ -1,0 +1,614 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: micow.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "micow.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "micow"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : micow
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/fullAdder.vhd" in Library work.
+Architecture comportamento of Entity fulladder is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/four_bitAdder.vhd" in Library work.
+Architecture behavior of Entity four_bitadder is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd" in Library work.
+Architecture comportamento of Entity display is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/divClock.vhd" in Library work.
+Architecture behavior of Entity clockdiv is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/PC.vhd" in Library work.
+Architecture behavior of Entity pc is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRom.vhd" in Library work.
+Architecture behavior of Entity memrom is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/RegBank.vhd" in Library work.
+Architecture behavior of Entity bankregister is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/ULA.vhd" in Library work.
+Architecture comportamento of Entity ula is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRam.vhd" in Library work.
+Architecture behavior of Entity memram is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/UnitControl.vhd" in Library work.
+Architecture behavior of Entity unitcontrol is up to date.
+Compiling vhdl file "/home/muriki/ufpr/MIPS-8bit-Processor/Components/main.vhd" in Library work.
+Architecture behavior of Entity micow is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <micow> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <clockDiv> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <pc> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <MemRom> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <BankRegister> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <ula> in library <work> (architecture <comportamento>).
+
+Analyzing hierarchy for entity <MemRam> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <UnitControl> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <comportamento>).
+
+Analyzing hierarchy for entity <four_bitAdder> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <fullAdder> in library <work> (architecture <comportamento>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <micow> in library <work> (Architecture <behavior>).
+Entity <micow> analyzed. Unit <micow> generated.
+
+Analyzing Entity <clockDiv> in library <work> (Architecture <behavior>).
+Entity <clockDiv> analyzed. Unit <clockDiv> generated.
+
+Analyzing Entity <pc> in library <work> (Architecture <behavior>).
+Entity <pc> analyzed. Unit <pc> generated.
+
+Analyzing Entity <MemRom> in library <work> (Architecture <behavior>).
+Entity <MemRom> analyzed. Unit <MemRom> generated.
+
+Analyzing Entity <BankRegister> in library <work> (Architecture <behavior>).
+Entity <BankRegister> analyzed. Unit <BankRegister> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <comportamento>).
+INFO:Xst:1561 - "/home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd" line 83: Mux is complete : default of case is discarded
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing Entity <ula> in library <work> (Architecture <comportamento>).
+Entity <ula> analyzed. Unit <ula> generated.
+
+Analyzing Entity <four_bitAdder> in library <work> (Architecture <behavior>).
+Entity <four_bitAdder> analyzed. Unit <four_bitAdder> generated.
+
+Analyzing Entity <fullAdder> in library <work> (Architecture <comportamento>).
+Entity <fullAdder> analyzed. Unit <fullAdder> generated.
+
+Analyzing Entity <MemRam> in library <work> (Architecture <behavior>).
+Entity <MemRam> analyzed. Unit <MemRam> generated.
+
+Analyzing Entity <UnitControl> in library <work> (Architecture <behavior>).
+Entity <UnitControl> analyzed. Unit <UnitControl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clockDiv>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/divClock.vhd".
+    Found 1-bit register for signal <clk>.
+    Found 1-bit register for signal <clk_tmp>.
+    Found 28-bit up counter for signal <div>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <clockDiv> synthesized.
+
+
+Synthesizing Unit <pc>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/PC.vhd".
+    Found 4-bit register for signal <address>.
+    Found 4-bit adder for signal <address$add0000> created at line 27.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <MemRom>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRom.vhd".
+    Found 16x8-bit ROM for signal <data$rom0000> created at line 69.
+    Summary:
+	inferred   1 ROM(s).
+Unit <MemRom> synthesized.
+
+
+Synthesizing Unit <MemRam>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/MemRam.vhd".
+    Found 16x4-bit single-port RAM <Mram_data_mem> for signal <data_mem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MemRam> synthesized.
+
+
+Synthesizing Unit <UnitControl>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/UnitControl.vhd".
+Unit <UnitControl> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/display.vhd".
+    Found 16x8-bit ROM for signal <cathodes>.
+    Found 3-bit up counter for signal <an_number>.
+    Found 17-bit comparator greatequal for signal <an_number$cmp_ge0000> created at line 27.
+    Found 3-bit comparator greater for signal <an_number$cmp_gt0000> created at line 32.
+    Found 17-bit up counter for signal <clk_counter>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   2 Comparator(s).
+Unit <display> synthesized.
+
+
+Synthesizing Unit <fullAdder>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/fullAdder.vhd".
+    Found 1-bit xor2 for signal <s>.
+    Found 1-bit xor2 for signal <c>.
+Unit <fullAdder> synthesized.
+
+
+Synthesizing Unit <BankRegister>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/RegBank.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <out_rs>.
+    Found 4-bit 4-to-1 multiplexer for signal <out_rt>.
+    Found 16-bit register for signal <reg_mem>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <BankRegister> synthesized.
+
+
+Synthesizing Unit <four_bitAdder>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/four_bitAdder.vhd".
+WARNING:Xst:646 - Signal <cout<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <four_bitAdder> synthesized.
+
+
+Synthesizing Unit <ula>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/ULA.vhd".
+Unit <ula> synthesized.
+
+
+Synthesizing Unit <micow>.
+    Related source file is "/home/muriki/ufpr/MIPS-8bit-Processor/Components/main.vhd".
+Unit <micow> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x4-bit single-port RAM                              : 1
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 4-bit register                                        : 5
+# Comparators                                          : 2
+ 17-bit comparator greatequal                          : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MemRam>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <mem_write>     | high     |
+    |     addrA          | connected to signal <mem_address>   |          |
+    |     diA            | connected to signal <data_in>       |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MemRam> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x4-bit single-port distributed RAM                  : 1
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Comparators                                          : 2
+ 17-bit comparator greatequal                          : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <micow> ...
+
+Optimizing unit <display> ...
+
+Optimizing unit <BankRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block micow, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : micow.ngr
+Top Level Output File Name         : micow
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 260
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 45
+#      LUT2                        : 12
+#      LUT3                        : 20
+#      LUT4                        : 48
+#      LUT4_D                      : 6
+#      LUT4_L                      : 4
+#      MUXCY                       : 57
+#      MUXF5                       : 13
+#      VCC                         : 1
+#      XORCY                       : 45
+# FlipFlops/Latches                : 66
+#      FD                          : 5
+#      FDE                         : 13
+#      FDR                         : 45
+#      FDRE                        : 3
+# RAMS                             : 4
+#      RAM16X1S                    : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       75  out of   4656     1%  
+ Number of Slice Flip Flops:             66  out of   9312     0%  
+ Number of 4 input LUTs:                147  out of   9312     1%  
+    Number used as logic:               143
+    Number used as RAMs:                  4
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_fpga                           | BUFGP                  | 50    |
+clock/clk1                         | BUFG                   | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 18.040ns (Maximum Frequency: 55.432MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.087ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_fpga'
+  Clock period: 6.360ns (frequency: 157.233MHz)
+  Total number of paths / destination ports: 1658 / 102
+-------------------------------------------------------------------------
+Delay:               6.360ns (Levels of Logic = 9)
+  Source:            RB/display0/clk_counter_5 (FF)
+  Destination:       RB/display0/an_number_0 (FF)
+  Source Clock:      clk_fpga rising
+  Destination Clock: clk_fpga rising
+
+  Data Path: RB/display0/clk_counter_5 to RB/display0/an_number_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  RB/display0/clk_counter_5 (RB/display0/clk_counter_5)
+     LUT1:I0->O            1   0.704   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<0>_rt (RB/display0/Mcompar_an_number_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<0> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<1> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<2> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<3> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<4> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  RB/display0/Mcompar_an_number_cmp_ge0000_cy<5> (RB/display0/Mcompar_an_number_cmp_ge0000_cy<5>)
+     MUXCY:CI->O          21   0.331   1.207  RB/display0/Mcompar_an_number_cmp_ge0000_cy<6> (RB/display0/an_number_cmp_ge0000)
+     LUT2:I1->O            3   0.704   0.531  RB/display0/an_number_and00001 (RB/display0/an_number_and0000)
+     FDRE:R                    0.911          RB/display0/an_number_0
+    ----------------------------------------
+    Total                      6.360ns (4.000ns logic, 2.360ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock/clk1'
+  Clock period: 18.040ns (frequency: 55.432MHz)
+  Total number of paths / destination ports: 15747 / 52
+-------------------------------------------------------------------------
+Delay:               9.020ns (Levels of Logic = 6)
+  Source:            PCount/address_3 (FF)
+  Destination:       DM/Mram_data_mem1 (RAM)
+  Source Clock:      clock/clk1 rising
+  Destination Clock: clock/clk1 falling
+
+  Data Path: PCount/address_3 to DM/Mram_data_mem1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.591   1.192  PCount/address_3 (PCount/address_3)
+     LUT4:I0->O            8   0.704   0.932  IM/Mrom_data_rom000031 (IM/Mrom_data_rom00003)
+     LUT2:I0->O            1   0.704   0.000  RB/Mmux_out_rt_2_f5_1_F (N40)
+     MUXF5:I0->O           3   0.321   0.566  RB/Mmux_out_rt_2_f5_1 (rt_out<2>)
+     LUT3:I2->O            2   0.704   0.482  ALU/b_mux<2>1 (ALU/b_mux<2>)
+     LUT4:I2->O            1   0.704   0.455  ALU/adder/s1/cout1_SW2 (N20)
+     LUT4:I2->O           12   0.704   0.961  ALU/adder/s3/Mxor_s_Result1 (alu_result<3>)
+     RAM16X1S:A3               0.000          DM/Mram_data_mem1
+    ----------------------------------------
+    Total                      9.020ns (4.432ns logic, 4.588ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_fpga'
+  Total number of paths / destination ports: 147 / 12
+-------------------------------------------------------------------------
+Offset:              8.087ns (Levels of Logic = 4)
+  Source:            RB/display0/an_number_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clk_fpga rising
+
+  Data Path: RB/display0/an_number_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.591   1.192  RB/display0/an_number_0 (RB/display0/an_number_0)
+     LUT4:I0->O            1   0.704   0.000  RB/display0/reg<0>1 (RB/display0/reg<0>1)
+     MUXF5:I1->O           7   0.321   0.883  RB/display0/reg<0>_f5 (RB/display0/reg<0>)
+     LUT3:I0->O            1   0.704   0.420  RB/display0/Mrom_cathodes41 (cathodes_4_OBUF)
+     OBUF:I->O                 3.272          cathodes_4_OBUF (cathodes<4>)
+    ----------------------------------------
+    Total                      8.087ns (5.592ns logic, 2.495ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock/clk1'
+  Total number of paths / destination ports: 81 / 8
+-------------------------------------------------------------------------
+Offset:              7.505ns (Levels of Logic = 4)
+  Source:            RB/reg_mem_2_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clock/clk1 rising
+
+  Data Path: RB/reg_mem_2_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.610  RB/reg_mem_2_0 (RB/reg_mem_2_0)
+     LUT4:I1->O            1   0.704   0.000  RB/display0/reg<0>1 (RB/display0/reg<0>1)
+     MUXF5:I1->O           7   0.321   0.883  RB/display0/reg<0>_f5 (RB/display0/reg<0>)
+     LUT3:I0->O            1   0.704   0.420  RB/display0/Mrom_cathodes41 (cathodes_4_OBUF)
+     OBUF:I->O                 3.272          cathodes_4_OBUF (cathodes<4>)
+    ----------------------------------------
+    Total                      7.505ns (5.592ns logic, 1.913ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.32 secs
+ 
+--> 
+
+
+Total memory usage is 515364 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

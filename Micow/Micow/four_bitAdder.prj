@@ -1,0 +1,2 @@
+vhdl work "../../Components/fullAdder.vhd"
+vhdl work "../../Components/four_bitAdder.vhd"

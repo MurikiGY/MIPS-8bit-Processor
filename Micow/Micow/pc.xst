@@ -1,0 +1,5 @@
+set -tmpdir "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/xst/projnav.tmp"
+set -xsthdpdir "/home/muriki/ufpr/MIPS-8bit-Processor/Micow/Micow/xst"
+elaborate
+-ifn pc.prj
+-ifmt mixed
